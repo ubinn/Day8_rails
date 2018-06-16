@@ -3,10 +3,9 @@ class TweetController < ApplicationController
     def index
         @contents = Tweet.all
     end
-
     
     def new
-        p request
+       # p request
     end
     
     def create

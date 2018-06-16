@@ -1,0 +1,16 @@
+<form action="/tweet/<%=@tweet.id %>/update" method="POST">
+    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+        <div class="col-4">
+            nickname
+            <input class="form-control mr-sm-2" type="text" value="<%=@tweet.nickname%>" name="nickname" required>
+        </div>
+        <div class="col">
+            content
+            <input class="form-control" type="text" name="content" value="<%=@tweet.contents%>">
+        </div>
+        <br/>
+        <div class="form-row">
+            <div class="col-5"><input type="hidden"></div>
+            <input class="btn btn-primary" type="submit" value=" 수정하기 ">
+        </div>
+</form>
