@@ -5,8 +5,9 @@
             <input class="form-control mr-sm-2" type="text" value="<%=@tweet.nickname%>" name="nickname" required>
         </div>
         <div class="col">
-            content
-            <input class="form-control" type="text" name="content" value="<%=@tweet.contents%>">
+            content 
+            <textarea class="form-control" name="content" placeholder="내용을 입력하세요."><%=@tweet.contents%></textarea>
+            <!-- <input class="form-control" type="text" name="content" value="<%=@tweet.contents%>"> -->
         </div>
         <br/>
         <div class="form-row">

@@ -9,7 +9,13 @@
         </span>
         <div class="text-center">
             <p class="lead">" <%= @content.contents %> "</p> <br/>
-            <a href='/tweet'>List</a>
+            <%= link_to '목록 | ',"/tweet" %>
+            <%= link_to '수정 | ',"/tweet/#{@content.id}/edit" %>
+            <%= link_to '삭제 ',"/tweet/#{@content.id}/destroy" %>
+            <!--
+            <a href='/tweet'>목록 | </a>
+            <a href='/tweet/<%= @content.id %>/edit'>수정 | </a>
+            <a href='/tweet/<%= @content.id %>/destroy'>삭제 </a> -->
       </main>
       </div>
 

@@ -22,6 +22,12 @@
   
     <div class="jumbotron">
         <div class="container">
+          <% flash.each do |k,v| %>
+           <!-- <div class="alert alert-<%= k %>"><%= v %></div> -->
+            <script>
+              toastr.<%= k %>("<%= v %>");
+            </script>
+          <% end %>
           <%= yield %>
         </div>
     </div>
